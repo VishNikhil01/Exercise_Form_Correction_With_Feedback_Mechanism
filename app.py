@@ -391,7 +391,7 @@ while running:
                 frame = object_frame
 
             # Display the original frame
-            FRAME_WINDOW.image(frame)
+            FRAME_WINDOW.image(frame, width=640, use_container_width=False)
         except Exception as e:
             pass
     except KeyboardInterrupt:
